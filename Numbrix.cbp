@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Numbrix" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Numbrix" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Numbrix" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="SDL2/i686-w64-mingw32/include" />
+		</Compiler>
+		<Linker>
+			<Add option="-lmingw32" />
+			<Add option="-lSDL2main" />
+			<Add option="-lSDL2" />
+			<Add option="-lSDL2_image" />
+			<Add option="-lSDL2_ttf" />
+			<Add option="-static-libstdc++" />
+			<Add option="-static-libgcc" />
+			<Add directory="SDL2/i686-w64-mingw32/lib" />
+		</Linker>
+		<Unit filename="include/Engine.h" />
+		<Unit filename="include/Font.h" />
+		<Unit filename="include/Grid.h" />
+		<Unit filename="include/Matrix.h" />
+		<Unit filename="include/Timer.h" />
+		<Unit filename="include/Validation.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/Engine.cpp" />
+		<Unit filename="src/Font.cpp" />
+		<Unit filename="src/Grid.cpp" />
+		<Unit filename="src/Matrix.cpp" />
+		<Unit filename="src/Timer.cpp" />
+		<Unit filename="src/Validation.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
